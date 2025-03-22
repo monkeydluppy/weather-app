@@ -1,0 +1,79 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+/* Variables */
+
+/* Default */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* scrollbar-color: #1e1e1e transparent; */
+    /* scrollbar-width: thin; */
+}
+*::selection {
+    background: #1e1e1e;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--sans-serif);
+    background: #1e1e1e;
+    overflow-x: hidden;
+    position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+b,
+i,
+u,
+ul,
+ol,
+li,
+span {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+img,
+video {
+    width: 100%;
+}
+p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--dark-alt);
+    line-height: 160%;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
